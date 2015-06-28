@@ -10,20 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
     var playerSelection: NSString!
+    var gameMaster: gameLogic!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-
     //present view using just storyboard
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! resultsViewController
+        gameMaster = gameLogic()
+
         if segue.identifier == "usingRock" {
-            let controller = segue.destinationViewController as!
-            resultsViewController
-            
             //pass data
+            controller.matchResultDictionary = gameMaster.executeRound("rock")
+        } else if segue.identifier == "usingScissor" {
+            //pass data
+            controller.matchResultDictionary = gameMaster.executeRound("scissor")
         }
     }
 
@@ -33,13 +37,16 @@ class ViewController: UIViewController {
 
         controller = self.storyboard?.instantiateViewControllerWithIdentifier("resultsViewController") as! resultsViewController
         
+        gameMaster = gameLogic()
+        
         //pass data
+        controller.matchResultDictionary = gameMaster.executeRound("paper")
         presentViewController(controller, animated: true, completion: nil)
     }
     
     //present view using code and storyboard
     @IBAction func scissor(sender: UIButton) {
-        performSegueWithIdentifier("manualModal", sender: self)
+        performSegueWithIdentifier("usingScissor", sender: self)
     }
 }
 

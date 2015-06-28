@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -125,12 +126,12 @@
                             <mask key="constraints">
                                 <exclude reference="Pzh-EY-JI1"/>
                                 <exclude reference="TSN-az-Hgg"/>
-                                <exclude reference="9sh-iH-9dv"/>
-                                <exclude reference="YyH-8J-baW"/>
                                 <exclude reference="PBc-UV-Gmk"/>
                                 <exclude reference="jIy-9i-u3g"/>
                                 <exclude reference="eQf-bd-S8A"/>
                                 <exclude reference="v4N-Bb-50r"/>
+                                <exclude reference="9sh-iH-9dv"/>
+                                <exclude reference="YyH-8J-baW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -143,21 +144,22 @@
                             <mask key="constraints">
                                 <include reference="Pzh-EY-JI1"/>
                                 <include reference="TSN-az-Hgg"/>
-                                <include reference="9sh-iH-9dv"/>
-                                <include reference="YyH-8J-baW"/>
                                 <include reference="PBc-UV-Gmk"/>
                                 <include reference="jIy-9i-u3g"/>
                                 <include reference="eQf-bd-S8A"/>
                                 <include reference="v4N-Bb-50r"/>
+                                <include reference="9sh-iH-9dv"/>
+                                <include reference="YyH-8J-baW"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="u2N-BW-77Y" kind="presentation" identifier="manualModal" id="vlg-9i-mSA"/>
+                        <segue destination="u2N-BW-77Y" kind="presentation" identifier="usingScissor" id="vlg-9i-mSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1017" y="351"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="vNk-e0-SPz">
@@ -176,9 +178,6 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="132" y="106" width="137" height="29"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win/Lose" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX6-ob-GvU">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -266,21 +265,21 @@
                             <mask key="constraints">
                                 <exclude reference="j7V-0D-Xke"/>
                                 <exclude reference="uKT-T4-Jhe"/>
+                                <exclude reference="QCC-Fs-5oo"/>
+                                <exclude reference="rLc-pX-NbJ"/>
                                 <exclude reference="Gp6-Bw-M6h"/>
                                 <exclude reference="Xz5-be-7kt"/>
-                                <exclude reference="oDr-53-b0N"/>
-                                <exclude reference="r4Z-DP-YeW"/>
                                 <exclude reference="71s-2G-iTL"/>
                                 <exclude reference="NAG-5C-yon"/>
+                                <exclude reference="5sb-Mb-4OK"/>
+                                <exclude reference="sJo-8W-YQx"/>
+                                <exclude reference="7Km-nF-U9s"/>
+                                <exclude reference="T0e-ax-cBc"/>
+                                <exclude reference="oDr-53-b0N"/>
+                                <exclude reference="r4Z-DP-YeW"/>
                                 <exclude reference="MUf-rR-thw"/>
                                 <exclude reference="WfG-Bm-HIx"/>
                                 <exclude reference="qfn-RV-aYS"/>
-                                <exclude reference="5sb-Mb-4OK"/>
-                                <exclude reference="sJo-8W-YQx"/>
-                                <exclude reference="QCC-Fs-5oo"/>
-                                <exclude reference="rLc-pX-NbJ"/>
-                                <exclude reference="7Km-nF-U9s"/>
-                                <exclude reference="T0e-ax-cBc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -297,28 +296,28 @@
                             <mask key="constraints">
                                 <include reference="j7V-0D-Xke"/>
                                 <include reference="uKT-T4-Jhe"/>
+                                <include reference="QCC-Fs-5oo"/>
+                                <include reference="rLc-pX-NbJ"/>
                                 <include reference="Gp6-Bw-M6h"/>
                                 <include reference="Xz5-be-7kt"/>
-                                <include reference="oDr-53-b0N"/>
-                                <include reference="r4Z-DP-YeW"/>
                                 <include reference="71s-2G-iTL"/>
                                 <include reference="NAG-5C-yon"/>
+                                <include reference="5sb-Mb-4OK"/>
+                                <include reference="sJo-8W-YQx"/>
+                                <include reference="7Km-nF-U9s"/>
+                                <include reference="T0e-ax-cBc"/>
+                                <include reference="oDr-53-b0N"/>
+                                <include reference="r4Z-DP-YeW"/>
                                 <include reference="MUf-rR-thw"/>
                                 <include reference="WfG-Bm-HIx"/>
                                 <include reference="qfn-RV-aYS"/>
-                                <include reference="5sb-Mb-4OK"/>
-                                <include reference="sJo-8W-YQx"/>
-                                <include reference="QCC-Fs-5oo"/>
-                                <include reference="rLc-pX-NbJ"/>
-                                <include reference="7Km-nF-U9s"/>
-                                <include reference="T0e-ax-cBc"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRB-Oy-O7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="467.25"/>
+            <point key="canvasLocation" x="2020.5" y="358.5"/>
         </scene>
     </scenes>
     <resources>
@@ -327,6 +326,6 @@
         <image name="scissors" width="75" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dFu-95-Hul"/>
+        <segue reference="vlg-9i-mSA"/>
     </inferredMetricsTieBreakers>
 </document>

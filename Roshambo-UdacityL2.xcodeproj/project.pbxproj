@@ -15,6 +15,8 @@
 		6D6C20231B407C7B0083927E /* Roshambo_UdacityL2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C20221B407C7B0083927E /* Roshambo_UdacityL2Tests.swift */; };
 		6D6C202D1B4080730083927E /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C202C1B4080730083927E /* resultsViewController.swift */; };
 		6D6C202E1B4080730083927E /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C202C1B4080730083927E /* resultsViewController.swift */; };
+		6D6C20301B4086470083927E /* gameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C202F1B4086470083927E /* gameLogic.swift */; };
+		6D6C20311B4086470083927E /* gameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C202F1B4086470083927E /* gameLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		6D6C20211B407C7B0083927E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D6C20221B407C7B0083927E /* Roshambo_UdacityL2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roshambo_UdacityL2Tests.swift; sourceTree = "<group>"; };
 		6D6C202C1B4080730083927E /* resultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resultsViewController.swift; path = ../resultsViewController.swift; sourceTree = "<group>"; };
+		6D6C202F1B4086470083927E /* gameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = gameLogic.swift; path = ../gameLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 		6D6C20091B407C7B0083927E /* Roshambo-UdacityL2 */ = {
 			isa = PBXGroup;
 			children = (
+				6D6C202F1B4086470083927E /* gameLogic.swift */,
 				6D6C200C1B407C7B0083927E /* AppDelegate.swift */,
 				6D6C200E1B407C7B0083927E /* ViewController.swift */,
 				6D6C202C1B4080730083927E /* resultsViewController.swift */,
@@ -218,6 +222,7 @@
 			files = (
 				6D6C200F1B407C7B0083927E /* ViewController.swift in Sources */,
 				6D6C200D1B407C7B0083927E /* AppDelegate.swift in Sources */,
+				6D6C20301B4086470083927E /* gameLogic.swift in Sources */,
 				6D6C202D1B4080730083927E /* resultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6C20311B4086470083927E /* gameLogic.swift in Sources */,
 				6D6C20231B407C7B0083927E /* Roshambo_UdacityL2Tests.swift in Sources */,
 				6D6C202E1B4080730083927E /* resultsViewController.swift in Sources */,
 			);

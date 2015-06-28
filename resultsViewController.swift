@@ -9,10 +9,12 @@
 import UIKit
 
 class resultsViewController: UIViewController {
-
+    var matchResultDictionary: NSDictionary!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        NSLog("results: %@", matchResultDictionary)
     }
     
     @IBAction func playAgain(sender: UIButton) {
