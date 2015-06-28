@@ -14,16 +14,20 @@ class gameLogic {
         
         var opponentHand = randomHandValue()
         var matchResult: NSString!
-        
+        var imageToShow: NSString!
+
         switch playerChoice {
             case "rock":
                 switch opponentHand {
                 case "rock":
                     matchResult = "Tie"
+                    imageToShow = "itsATie"
                 case "paper":
                     matchResult = "Lose"
-                case "scissor":
+                    imageToShow = "PaperCoversRock"
+                case "scissors":
                     matchResult = "Win"
+                    imageToShow = "RockCrushesScissors"
                 default:
                     break
                 }
@@ -31,22 +35,27 @@ class gameLogic {
                 switch opponentHand {
                 case "rock":
                     matchResult = "Win"
+                    imageToShow = "PaperCoversRock"
                 case "paper":
                     matchResult = "Tie"
-                case "scissor":
+                    imageToShow = "itsATie"
+                case "scissors":
                     matchResult = "Lose"
+                    imageToShow = "ScissorsCutPaper"
                 default:
                     break
             }
-            
-            case "scissor":
+            case "scissors":
                 switch opponentHand {
                 case "rock":
                     matchResult = "Lose"
+                    imageToShow = "RockCrushesScissors"
                 case "paper":
                     matchResult = "Win"
-                case "scissor":
+                    imageToShow = "ScissorsCutPaper"
+                case "scissors":
                     matchResult = "Tie"
+                    imageToShow = "itsATie"
                 default:
                     break
             }
@@ -55,7 +64,7 @@ class gameLogic {
             break
         }
         
-        let resultsDictionary = NSDictionary(objects: [playerChoice,opponentHand,matchResult], forKeys: ["playerChoice","opponentChoice","matchResult"])
+        let resultsDictionary = NSDictionary(objects: [playerChoice,opponentHand,matchResult,imageToShow], forKeys: ["playerChoice","opponentChoice","matchResult","resultImage"])
         return resultsDictionary
     }
     
@@ -68,7 +77,7 @@ class gameLogic {
         } else if randomValue == 2 {
             return "paper"
         } else if randomValue == 3 {
-            return "scissor"
+            return "scissors"
         } else {
             //Impossible!
             return "error"

@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             controller.matchResultDictionary = gameMaster.executeRound("rock")
         } else if segue.identifier == "usingScissor" {
             //pass data
-            controller.matchResultDictionary = gameMaster.executeRound("scissor")
+            controller.matchResultDictionary = gameMaster.executeRound("scissors")
         }
     }
 
