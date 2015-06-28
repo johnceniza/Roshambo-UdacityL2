@@ -9,17 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var playerSelection: NSString!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //present view using just storyboard
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "usingRock" {
+            let controller = segue.destinationViewController as!
+            resultsViewController
+            
+            //pass data
+        }
     }
 
+    //present view entirely in code
+    @IBAction func paper(sender: UIButton) {
+        var controller: resultsViewController
 
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("resultsViewController") as! resultsViewController
+        
+        //pass data
+        presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    //present view using code and storyboard
+    @IBAction func scissor(sender: UIButton) {
+        performSegueWithIdentifier("manualModal", sender: self)
+    }
 }
 
